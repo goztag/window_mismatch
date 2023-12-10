@@ -3,9 +3,9 @@
 Calculate pairwise mismatch in _n_ SNP windows from VCF files.
 
 ## Dependencies
-pysam
-itertools
-pandas
+- pysam
+- itertools
+- pandas
 
 ## Input 
 Population VCF file with biallelic SNPs only and no missing data.
@@ -21,5 +21,14 @@ Population VCF file with biallelic SNPs only and no missing data.
 
 ```
 
+## Example
+
+```bash
+python3 window_mismatch.py -vcf in.vcf -win 1000 -tot 100000 -out out.csv
+```
+
+## Output
+
+Table of average pairwise mismatch values per window. 
 
 
